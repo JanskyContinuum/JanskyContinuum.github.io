@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 IEEE AP-S Student Design Contest - Antenna System with Beam-Tracking Capabilities</title>
+    <!-- Tutaj podpinamy nasz plik ze stylami -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">About me</a>
+        <a href="/projects.html">My Projects</a>
+        <a href="/cv.html">CV</a>
+    </nav>
+
+    <main>
+        <h1 id="antenna-system-with-beam-tracking-capabilities">Antenna System with Beam-Tracking Capabilities</h1>
+
+<p><strong>2025 IEEE AP-S Student Design Contest - Finalists</strong></p>
+
+<p>In 2025, our team, <em>WaveSpotters</em>, was selected as one of the top 6 finalist teams worldwide in the 16th IEEE Antennas and Propagation Society (AP-S) Student Design Contest. 
+We designed, built, and tested a Time-Modulated Antenna Array (TMAA) capable of real-time tracking of a moving target. As finalists, we traveled to the IEEE AP-S Symposium in Ottawa, Canada, to demonstrate our working system in front of international experts.</p>
+
+<figure style="text-align:center;">
+  <img src="../assets/Kanada.jpg" alt="WaveSpotters team at the IEEE AP-S 2025 Symposium in Ottawa" width="650" />
+  <figcaption>
+    <em>The team at the IEEE AP-S International Symposium in Ottawa, Canada (2025) presenting our Time-Modulated Antenna Array .</em>
+  </figcaption>
+</figure>
+<h3 id="video-demonstration">Video Demonstration</h3>
+<p>You can see our antenna system in action and learn about the theory of operation in our demonstration video:<br />
+<a href="https://www.youtube.com/watch?v=lcOA49BfoNs"><strong>Watch the demonstration on YouTube</strong></a></p>
+
+<h3 id="my-role--contributions">My Role &amp; Contributions</h3>
+<p>As the <strong>Team Leader</strong>, I oversaw the progress of the entire project, organized the workflow, and ensured all contest specifications and deadlines were met. Aside from project management, my direct technical contributions included:</p>
+<ul>
+  <li><strong>Antenna Design:</strong> Designed and optimized the high-frequency patch antennas and the full array in Altair FEKO.</li>
+  <li><strong>Hardware &amp; Wireless Communication:</strong> Worked on the integration and programming of off-the-shelf Digi XBee3 (Zigbee) transceivers for the measurement and tracking system (written in MicroPython).</li>
+  <li><strong>Tracking Algorithm:</strong> Designed and implemented the core real-time tracking algorithm. I developed an adaptive population-based algorithm that dynamically adjusts the beam direction for best performance based on continuous RSSI measurements (written in Python).</li>
+  <li><strong>Documented system design and progress by writing detailed reports</strong> and step-by-step instructions to allow reproduction of the system as per the contest’s guidelines.
+    <h3 id="system-overview">System Overview</h3>
+    <p>Due to strict budget constraints (under $1,500), realizing a conventional analog phased array or a digital beamforming system was impractical. Instead, we developed a 16-element TMAA operating in the 2.45 GHz ISM band. The system utilizes RF microwave switches (SPDT) to periodically connect and disconnect elements from the feeding network.</p>
+  </li>
+</ul>
+
+<p>This approach allowed us to steer the main beam in 4.5° steps in the azimuth plane, covering a total angular range of 118°, entirely replacing expensive microwave phase shifters with simple switches. The entire setup, including the Arduino-based controller, is fully operated via a custom web application.</p>
+
+<h3 id="publications">Publications</h3>
+<p>You can read the full description of our system with steps to replicate it <a href="/assets/FinalReport_WaveSpotters_.pdf"><strong>here (in English)</strong></a></p>
+
+<p>Following the success of the contest, I co-authored a scientific paper detailing our TMAA design with one of the team members. We presented our findings at the National Conference of Radiocommunications, Radio Broadcasting and Television (KRiT).</p>
+
+<p><strong>Sixteen-Element Time-Modulated Antenna Array With Beam Steering in ISM Band</strong> – presented at KRiT 2025, Gdańsk.<br />
+  <a href="/assets/KRiT2025-artykul.pdf"><strong>Read the Article (PDF) (its in Polish)</strong></a></p>
+
+
+    </main>
+</body>
+</html>
