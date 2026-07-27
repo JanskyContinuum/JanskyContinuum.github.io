@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConwayScope - Cellular Automata Matrix (C++)</title>
+    <!-- Tutaj podpinamy nasz plik ze stylami -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">About me</a>
+        <a href="/projects.html">My Projects</a>
+        <a href="/cv.html">CV</a>
+    </nav>
+
+    <main>
+        <h1 id="conwayscope">ConwayScope</h1>
+
+<p>Unused muscles fade, and the exact same applies to the brain. Recently, I felt that my coding abilities were… hmm, slightly deteriorating from a lack of practice. To counter this, I decided to pick up C++,a language I last saw in high school over six years ago, and challenged myself to write a complete project from scratch, without the assistance of AI.</p>
+
+<h3 id="the-concept">The Concept</h3>
+<p>The result is <strong>ConwayScope</strong>. It is a hardware-software integration that runs John Conway’s famous <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> and visualizes the cellular automata on a physical 16x16 LED matrix display.  The LED matrix is composed of four 8x8 matrices driven by MAX7219 units.</p>
+
+<figure style="text-align:center; margin: 40px 0;">
+  <video width="450" controls="" muted="" loop="" style="border: 1px solid #333; border-radius: 4px;">
+    <source src="/assets/ConwaySc.mp4" type="video/mp4" />
+  </video>
+  <figcaption style="margin-top: 10px; color: #999;">
+    <em>The ConwayScope in action.</em>
+  </figcaption>
+</figure>
+
+<h3 id="the-scope-feature">The “Scope” Feature</h3>
+<p>I implemented a movable “window” or camera—the <em>Scope</em>. The application allows the user to pan a 16x16 viewport across the much larger, simulation plane. This means you can freely move the frame around to explore different evolving clusters and ecosystems of cells in real-time, just like looking through a microscope at a petri dish.</p>
+
+<h3 id="technologies--what-i-learned">Technologies &amp; What I Learned</h3>
+<p>Building this project served as an excellent refresher and a deep dive into several technical domains:</p>
+<ul>
+  <li><strong>C++ Programming:</strong> Re-learning memory management, pointers, and object-oriented design in a modern context to write the core simulation engine.</li>
+  <li><strong>Hardware Interfacing:</strong> Utilizing an <strong>Arduino Uno</strong> to drive the 16x16 LED matrix, which required managing power draw and pushing pixel updates at a high refresh rate.</li>
+  <li><strong>Serial Communication:</strong> Designing a reliable byte-stream protocol to send the calculated grid states from the host computer’s backend down to the Arduino via USB/UART.</li>
+</ul>
+
+<h3 id="github-repository">GitHub Repository</h3>
+
+<p>See the full code <a href="https://github.com/JanskyContinuum/ConwayScope" target="_blank">here</a>.</p>
+
+    </main>
+</body>
+</html>
