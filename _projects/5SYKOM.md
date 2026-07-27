@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Custom FPU Coprocessor & Linux Kernel Driver"
+title: "Custom FPU Coprocessor & Linux Kernel Driver (C, Verilog)"
 ---
 
 # Custom FPU Coprocessor & Linux Kernel Driver (RISC-V)
