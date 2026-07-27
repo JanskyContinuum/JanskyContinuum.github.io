@@ -5,7 +5,7 @@ title: "ConwayScope - Cellular Automata Matrix (C++)"
 
 # ConwayScope
 
-Unused muscles fade, and the exact same applies to the brain. Recently, I felt that my coding abilities were... hmm, slightly deteriorating from a lack of practice. To counter this, I decided to pick up C++,a language I last saw in high school over six years ago, and challenged myself to write a complete project from scratch, without the assistance of AI.
+Unused muscles fade, and the exact same applies to the brain. Recently, I felt that my coding abilities were... hmm, slightly deteriorating from a lack of practice. To counter this, I decided to pick up C++,a language I last saw in high school over six years ago, and challenged myself to write a complete project from scratch, with as little help from AI as as my dwindling patience for C++ pointer arithmetic would allow.
 
 ### The Concept
 The result is **ConwayScope**. It is a hardware-software integration that runs John Conway's famous [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) and visualizes the cellular automata on a physical 16x16 LED matrix display.  The LED matrix is composed of four 8x8 matrices driven by MAX7219 units.
